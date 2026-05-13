@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary:     0 232 123;
+  --color-accent:      0 197 102;
+  --color-background:  5 5 5;
+  --color-surface:     13 13 13;
+  --color-card:        17 17 17;
+  --color-foreground:  232 232 232;
+  --color-muted:       107 107 107;
+  --color-border:      26 26 26;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-family: 'Syne', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    min-height: 100vh;
+  }
+}
