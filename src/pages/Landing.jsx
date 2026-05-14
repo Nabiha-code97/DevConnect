@@ -105,13 +105,13 @@ export default function Landing() {
         </div>
 
         <div className="py-6">
-          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-extrabold tracking-[-0.03em] leading-none inline-flex select-none">
-            <span className="anim-logo-dev text-[#00e87b]">
+          <div className="text-[clamp(2rem,9vw,3rem)] sm:text-6xl md:text-7xl lg:text-[80px] font-extrabold tracking-[-0.03em] leading-none flex flex-col sm:flex-row select-none">
+            <span className="anim-logo-dev text-[#00e87b] whitespace-nowrap">
               {'Dev'.split('').map((l, i) => (
                 <span key={i} className="inline-block">{l}</span>
               ))}
             </span>
-            <span className="anim-logo-connect text-[#e8e8e8]">
+            <span className="anim-logo-connect text-[#e8e8e8] whitespace-nowrap">
               {'Connect'.split('').map((l, i) => (
                 <span key={i} className="inline-block">{l}</span>
               ))}
